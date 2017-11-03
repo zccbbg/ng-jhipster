@@ -31,9 +31,9 @@ import { JhiConfigService } from '../config.service';
             [attr.translateValues]="i18nValues()">  /* [attr.translateValues] is used to get entire values in tests */
         </div>
         <ng-template #noI18n class="info jhi-item-count">
-            Showing {{((page - 1) * itemsPerPage) == 0 ? 1 : ((page - 1) * itemsPerPage + 1)}} -
+            显示 {{((page - 1) * itemsPerPage) == 0 ? 1 : ((page - 1) * itemsPerPage + 1)}} -
             {{(page * itemsPerPage) < total ? (page * itemsPerPage) : total}}
-            of {{total}} items.
+            共 {{total}} 条.
         </ng-template>`
 })
 export class JhiItemCountComponent {
